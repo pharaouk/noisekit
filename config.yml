@@ -1,0 +1,11 @@
+base_model_id: "/root/factorio/factory/storage/bases/finetuning-sn6-1"
+device: "cuda"
+dtype: "bfloat16"
+noise_levels: [0.00001, 0.00002, 0.00003, 0.00004]
+sparsities: [0.01, 0.2, 0.03, 0.14]
+layer_names: ["mlp", "self_attn"]
+layer_ranges: [[0, 2], [4, 10], [23, 31]]
+noise_types: 
+  mlp: "normal"
+  self_attn: "normal"
+param_types: ["weight", "bias"]
