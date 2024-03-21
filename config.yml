@@ -1,4 +1,4 @@
-base_model_id: "/root/factorio/factory/storage/bases/finetuning-sn6-1"
+base_model_id: "SkunkworksAI/Mistralic-7B-1"
 device: "cuda"
 dtype: "bfloat16"
 noise_levels: [0.00001, 0.00002, 0.00003, 0.00004]
