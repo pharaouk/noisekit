@@ -1,7 +1,7 @@
 
 import argparse
 import string
-from utils import get_layer_info, get_model_arch, get_total_params, load_model_tok
+from noisekit.utils import get_layer_info, get_model_arch, get_total_params, load_model_tok
 import yaml
 import torch
 import random
