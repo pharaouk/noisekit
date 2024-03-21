@@ -1,35 +1,13 @@
 
 import argparse
-import os
 import string
-import subprocess
 from utils import get_layer_info, get_model_arch, get_total_params, load_model_tok
 import yaml
-import asyncio
-import math
-import os
-import wandb
 import torch
 import random
 import argparse
-import typing
-import datetime as dt
 from transformers import PreTrainedModel, PreTrainedTokenizerBase, AutoModelForCausalLM, AutoTokenizer
 import sys
-import random
-import os
-import time
-import json
-import random
-import sys
-import shutil
-import uuid
-import torch
-import sys
-import json
-import time
-import subprocess
-import yaml
 from tqdm import tqdm
 
 class AttributeDict(dict):
@@ -151,7 +129,7 @@ def main():
     else:
         random_suffix = ''.join(random.choices(string.ascii_letters + string.digits, k=4))
         output = f"model_{random_suffix}"
-        
+
     if args.config:
         config = load_config(args.config)
 
